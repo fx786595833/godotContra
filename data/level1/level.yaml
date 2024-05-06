@@ -1,0 +1,129 @@
+level_type: S
+number: 1
+name: Jungle
+music: music.wav
+background: background_no_labels.png
+background_animation_shift: [0, 224]
+floor_mask: mask.bmp
+rotating_canons:
+  - pos: [1264, 152]
+    burst_length: 1
+  - pos: [1648, 120]
+    burst_length: 1
+  - pos: [1840, 120]
+    burst_length: 1
+  - pos: [2991, 184]
+    burst_length: 1
+  - pos: [3119, 184]
+    burst_length: 3
+gulcans:
+  - pos: [2063, 152]
+  - pos: [2191, 56]
+  - pos: [2767, 120]
+ledders:
+  - pos: [1343, 98]
+    time_hidden: 2
+    time_shown: 2
+    cooldown_time: 2
+    show_standing: false
+    burst_length: 1
+    burst_cooldown: 0
+    horizontally_precise: false
+  - pos: [1552, 66]
+    time_hidden: 2
+    time_shown: 2
+    cooldown_time: 2
+    show_standing: false
+    burst_length: 1
+    burst_cooldown: 0
+    horizontally_precise: false
+  - pos: [3234, 78]
+    time_hidden: 2
+    time_shown: 2
+    cooldown_time: 0.25
+    show_standing: true
+    burst_length: 3
+    burst_cooldown: 2
+    horizontally_precise: true
+  - pos: [321, 204]
+    time_hidden: 0
+    time_shown: 0
+    cooldown_time: 0.4
+    show_standing: true
+    burst_length: 3
+    burst_cooldown: 3
+    horizontally_precise: false
+  - pos: [641, 204]
+    time_hidden: 0
+    time_shown: 0
+    cooldown_time: 0.4
+    show_standing: true
+    burst_length: 3
+    burst_cooldown: 3
+    horizontally_precise: false
+  - pos: [1281, 108]
+    time_hidden: 0
+    time_shown: 0
+    cooldown_time: 0.4
+    show_standing: true
+    burst_length: 3
+    burst_cooldown: 3
+    horizontally_precise: false
+  - pos: [2369, 140]
+    time_hidden: 0
+    time_shown: 0
+    cooldown_time: 0.4
+    show_standing: true
+    burst_length: 3
+    burst_cooldown: 3
+    horizontally_precise: false
+greeders:
+  - pos: [309, 109]
+  - pos: [415, 109]
+    chance_skip: 0.8
+  - pos: [607, 109]
+  - pos: [831, 109]
+    chance_skip: 0.5
+  - pos: [1023, 109]
+    chance_skip: 0.5
+  - pos: [1230, 109]
+    chance_skip: 0.7
+  - pos: [1240, 109]
+    chance_skip: 0.7
+  - pos: [1260, 109]
+    chance_skip: 0.7
+  - pos: [1260, 109]
+    chance_skip: 0.7
+  - pos: [1270, 109]
+    chance_skip: 0.7
+  - pos: [1280, 109]
+    chance_skip: 0.7
+  - pos: [1500, 205]
+  - pos: [1360, 241]
+  - pos: [1727, 77]
+    chance_skip: 0.5
+  - pos: [1819, 141]
+  - pos: [2267, 141]
+  - pos: [2459, 173]
+    chance_skip: 0.5
+  - pos: [2778, 141]
+  - pos: [3071, 109]
+covered_pickups:
+  - pos: [335, 152]
+    content: M
+  - pos: [1583, 152]
+    content: F
+  - pos: [2287, 184]
+    content: S
+flying_pickups:
+  - pos: [257, 56]
+    content: R
+  - pos: [1137, 70]
+    content: S
+  - pos: [2337, 65]
+    content: R
+  - pos: [2337, 185]
+    content: L
+exploding_bridges:
+  - pos: [767, 105]
+  - pos: [1055, 105]

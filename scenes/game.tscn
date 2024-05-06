@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxfmu3e8o638j"]
+
+[ext_resource type="Texture2D" uid="uid://bc3a6as8jpb2" path="res://data/level1/background_no_labels.png" id="1_qyhr6"]
+[ext_resource type="PackedScene" uid="uid://baieotn7kc82x" path="res://scenes/player.tscn" id="2_myf0i"]
+[ext_resource type="PackedScene" uid="uid://n1am46b6tbqw" path="res://scenes/boundary.tscn" id="3_3llx4"]
+
+[node name="Game" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 1.0
+offset_right = 3327.0
+offset_bottom = 449.0
+scale = Vector2(2.8893, 2.8893)
+texture = ExtResource("1_qyhr6")
+
+[node name="Player" parent="." instance=ExtResource("2_myf0i")]
+position = Vector2(177, 233)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-21.6, -46.8)
+scale = Vector2(0.2, 0.2)
+anchor_mode = 0
+limit_left = 0
+limit_top = 0
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="boundary" type="Node" parent="."]
+
+[node name="Boundary" parent="boundary" instance=ExtResource("3_3llx4")]
+position = Vector2(279, 646)

@@ -1,0 +1,180 @@
+level_type: P
+number: 2
+name: Base 1
+music: music.wav
+boss_music: boss.wav
+background: background.png
+background_animation_shift: [0, 224]
+background_animation_shift_time: 0.05
+screens: 6
+weak_cores:
+  - pos: [1152, 96]
+  - pos: [1384, 96]
+  - pos: [1664, 104]
+  - pos: [1920, 96]
+strong_cores:
+  - pos: [2176, 96]
+core_canons:
+  - pos: [1432, 96]
+  - pos: [1640, 96]
+  - pos: [1688, 96]
+  - pos: [1920, 80]
+  - pos: [2152, 96]
+  - pos: [2200, 96]
+  - pos: [2176, 72]
+# spawn props:
+#    jumps, stop_to_shoot_prob, change_dir_prob, speed_factor, pickup,
+#    shoots_pills, cooldown_min, cooldown_max, entrance
+spawn_patterns:
+  - pretime: 1
+    pattern:
+      - jumps: true
+        entrance: right
+        secs_next: 2
+      - entrance: left
+        secs_next: 0
+      - entrance: right
+        secs_next: 2.1
+      - jumps: true
+        entrance: right
+        pickup: 'R'
+        secs_next: 1.9
+      - entrance: left
+        secs_next: 2.1
+      - entrance: right
+        secs_next: 1.75
+  - pretime: 1
+    pattern:
+      - jumps: true
+        entrance: right
+        secs_next: 1.9
+      - entrance: left
+        speed_factor: 0.9
+        stop_to_shoot_prob: 1
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1
+        stop_to_shoot_prob: 1
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.05
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.1
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 2.5
+      - entrance: left
+        secs_next: 2
+      - jumps: true
+        entrance: right
+        pickup: 'M'
+        secs_next: 1.75
+  - pretime: 1
+    pattern:
+      - entrance: right
+        secs_next: 1.9
+      - entrance: left
+        secs_next: 2.5
+      - entrance: right
+        secs_next: 1.9
+      - entrance: left
+        secs_next: 2.5
+        speed_factor: 0.5
+        stop_to_shoot_prob: 1
+        cooldown_min: 0.8
+        shoots_pills: true
+
+  - pretime: 1
+    darrs: {start: 2.5, interval: 8}
+    pattern:
+      - jumps: true
+        entrance: right
+        secs_next: 1.5
+      - entrance: left
+        speed_factor: 0.9
+        stop_to_shoot_prob: 1
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1
+        stop_to_shoot_prob: 1
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.05
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.1
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 3.0
+      - jumps: true
+        entrance: right
+        pickup: 'M'
+        secs_next: 1.75
+      - entrance: left
+        secs_next: 2.5
+        speed_factor: 0.5
+        stop_to_shoot_prob: 1
+        cooldown_min: 0.8
+        shoots_pills: true
+  - pretime: 0
+    pattern:
+      - jumps: true
+        entrance: right
+        secs_next: 0.5
+      - entrance: left
+        speed_factor: 0.9
+        stop_to_shoot_prob: 0.7
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1
+        stop_to_shoot_prob: 1
+        change_dir_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.05
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 1.5
+        secs_next: 0.1
+      - entrance: left
+        speed_factor: 1.1
+        stop_to_shoot_prob: 1
+        cooldown_min: 1
+        cooldown_max: 2
+        secs_next: 2.0
+      - jumps: true
+        entrance: left
+        secs_next: 0
+      - jumps: true
+        entrance: right
+        pickup: 'F'
+        secs_next: 1.5
+      - entrance: left
+        secs_next: 2.5
+        shoots_pills: true
